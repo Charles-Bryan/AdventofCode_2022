@@ -1,3 +1,4 @@
+# Community accepted safe way of retrieving and caching the data without stressing the AoC servers
 from aocd import get_data
 
 # --- Day 1: Calorie Counting ---
