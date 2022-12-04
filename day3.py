@@ -41,7 +41,6 @@ parsed_input = input_split(input=lines, method='part1')
 chars = [char_in_all(strings) for strings in parsed_input]
 print(sum_chars(chars))
 
-
 # Part 2: Matching character across 3 Elves
 parsed_input = input_split(input=lines, method='part2')
 chars = [char_in_all(strings) for strings in parsed_input]
