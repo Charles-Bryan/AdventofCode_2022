@@ -3,7 +3,6 @@ import operator
 
 
 class Node:
-
     def __init__(self, name, size=None, parent=None):
         self.name = name
         self.size = size
