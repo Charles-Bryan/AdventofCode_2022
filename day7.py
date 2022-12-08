@@ -3,7 +3,6 @@ import operator
 
 
 class Node:
-    # part1 = []
 
     def __init__(self, name, size=None, parent=None):
         self.name = name
@@ -27,7 +26,6 @@ class Node:
     def get_size(self):
         if self.size is None:
             self.calc_sizes()
-
         return self.size
 
     def calc_sizes(self):
@@ -70,7 +68,6 @@ def generate_tree(input_lines):
                 current_node.add_child(Node(line_parts[1]))
             else:
                 current_node.add_child(Node(line_parts[1], int(line_parts[0])))
-
     return root
 
 
