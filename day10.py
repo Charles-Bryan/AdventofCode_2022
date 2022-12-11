@@ -18,15 +18,14 @@ cur_val, ix, output = 1, 1, 0
 
 string_thing = append_char(string='', position=ix-1, value=cur_val)
 for line in input_lines:
-    if line == 'noop':
-        ix += 1
-    else:
-        ix += 1
+    ix += 1
+    if line != 'noop':
         string_thing = append_char(string=string_thing, position=ix-1, value=cur_val)
         if ix % 40 == 20:
             output += ix*cur_val
         ix += 1
         cur_val += int(line.split(' ')[1])
+
     string_thing = append_char(string=string_thing, position=ix-1, value=cur_val)
     if ix % 40 == 20:
         output += ix * cur_val
