@@ -14,10 +14,8 @@ raw_data = get_data(day=10, year=2022)
 input_lines = raw_data.split('\n')
 
 # Looping through the instructions
-cycle_values = []
-cur_val = 1
-output = 0
-ix = 1
+cur_val, ix, output = 1, 1, 0
+
 string_thing = append_char(string='', position=ix-1, value=cur_val)
 for line in input_lines:
     if line == 'noop':
