@@ -52,17 +52,17 @@ def monkey_games(num_rounds, monkeys, starting_positions, multiple=None):
     return math.prod(sorted(dd.values(), reverse=True)[0:2])
 
 
-# --- Day 11: Monkey Business ---
+# --- Day 11: Monkey in the Middle ---
 # Getting the input
 raw_data = get_data(day=11, year=2022)
 input_lines = raw_data.split('\n')
 
 sp, M, lm = parse_input(input_lines=input_lines)
 
-# Part 1:
+# Part 1: Restrained Emotions
 part1 = monkey_games(num_rounds=20, monkeys=M, starting_positions=sp, multiple=None)
 print(f"Part1: {part1}")
 
-# Part 1:
+# Part 2: Limitless Worrying
 part2 = monkey_games(num_rounds=10000, monkeys=M, starting_positions=sp, multiple=lm)
 print(f"Part2: {part2}")
